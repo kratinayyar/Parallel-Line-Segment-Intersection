@@ -17,8 +17,10 @@ public class ComputeIntersection {
 		for(HorizontalLines horizontal: hLines){
 			System.out.println("X----"+horizontal.getX()+"---Y---"+horizontal.getY());
 		}
-		
-		
+		System.out.println("Vertical");
+		for(VerticalLines vertical: vLines){
+			System.out.println("X----"+vertical.getX()+"---Y---"+vertical.getY());
+		}
 		
 	}
 	

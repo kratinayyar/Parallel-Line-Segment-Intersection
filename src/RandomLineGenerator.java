@@ -57,10 +57,10 @@ public class RandomLineGenerator {
 class hLineComparator implements Comparator<HorizontalLines> {
     @Override
     public int compare(HorizontalLines l1, HorizontalLines l2) {
-        if (l1.getY() < l2.getY() ){
+        if (l1.getY() > l2.getY() ){
         	   return 1;
         }
-        else if (l1.getY() > l2.getY()){
+        else if (l1.getY() < l2.getY()){
          return -1;
         }
         else
@@ -73,10 +73,10 @@ class hLineComparator implements Comparator<HorizontalLines> {
 class vLineComparator implements Comparator<VerticalLines> {
     @Override
     public int compare(VerticalLines l1, VerticalLines l2) {
-        if (l1.getX() < l2.getX() ){
+        if (l1.getX() > l2.getX() ){
         	   return 1;
         }
-        else if (l1.getX() > l2.getX()){
+        else if (l1.getX() < l2.getX()){
          return -1;
         }
         else
